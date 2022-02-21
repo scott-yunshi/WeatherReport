@@ -14,7 +14,7 @@ async function getWeatherReport() {
 	} else {
       let request = new XMLHttpRequest();
 	  
-      request.open("GET",`http://localhost:23663/api/weather?city=${city}&&country=${country}`);
+      request.open("GET",`http://localhost:5000/api/weather?city=${city}&&country=${country}`);
 	  request.setRequestHeader("WeatherReportAPIAuthKey", "key5");
       request.send();
       request.onload = () => {
