@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Report</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Weather Report</h1>
+        <br/><br/>
+		
+		<label for="city">City:</label>
+		<input type="text" id="city" name="city" required size="20">
+
+		<label for="country">Country:</label>
+		<input type="text" id="country" name="country" required size="10">
+		
+		<br/><br/>
+        <button id="sendWeatherRequestBtn" class="btn">Request Weather</button>
+		
+		<p id="report" class="report">Please enter city and country to get weather report.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
